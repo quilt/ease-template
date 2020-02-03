@@ -1,9 +1,7 @@
 [package]
-name = "{{project-name}}"
+name = "wrapper"
 version = "0.1.0"
 authors = ["{{authors}}"]
 edition = "2018"
 
 [dependencies]
-wrapper = { path = "wrapper" }
-ease = { path = "../ease" }
