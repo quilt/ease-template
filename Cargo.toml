@@ -6,4 +6,4 @@ edition = "2018"
 
 [dependencies]
 wrapper = { path = "wrapper" }
-ease = { path = "../ease" }
+ease = { git = "https://github.com/jrhea/ease", branch = "engine" }
