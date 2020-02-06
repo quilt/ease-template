@@ -1,0 +1,7 @@
+[package]
+name = "wrapper"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2018"
+
+[dependencies]

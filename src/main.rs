@@ -1,3 +1,5 @@
+use wrapper::ee_code;
+
 fn main() {
-    println!("Hello, world!");
+    ee_code();
 }
