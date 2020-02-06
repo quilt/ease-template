@@ -5,4 +5,4 @@ authors = ["{{authors}}"]
 edition = "2018"
 [dependencies]
 wrapper = { path = "wrapper" }
-ease = { git = "https://github.com/jrhea/ease", branch = "engine" }
+ease = { git = "https://github.com/quilt/ease", branch = "master" }
