@@ -8,7 +8,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "ease"
 version = "0.1.0"
-source = "git+https://github.com/jrhea/ease?branch=engine#2617122db739646fca37f2b757ace8650edd7533"
+source = "git+https://github.com/quilt/ease#66d272e2296263408333e51f77332807f640a0fd"
 dependencies = [
  "arrayref 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -17,7 +17,7 @@ dependencies = [
 name = "foo"
 version = "0.1.0"
 dependencies = [
- "ease 0.1.0 (git+https://github.com/jrhea/ease?branch=engine)",
+ "ease 0.1.0 (git+https://github.com/quilt/ease)",
  "wrapper 0.1.0",
 ]
 
@@ -27,4 +27,4 @@ version = "0.1.0"
 
 [metadata]
 "checksum arrayref 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)" = "a4c527152e37cf757a3f78aae5a06fbeefdb07ccc535c980a3208ee3060dd544"
-"checksum ease 0.1.0 (git+https://github.com/jrhea/ease?branch=engine)" = "<none>"
+"checksum ease 0.1.0 (git+https://github.com/quilt/ease)" = "<none>"

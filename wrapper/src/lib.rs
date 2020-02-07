@@ -1,9 +1,11 @@
 
 
 pub fn ee_code() -> Vec<u8> {
-    // TODO
-    let ee_code = "foo".as_bytes().to_vec();
-    return ee_code;
+    let ret = include_bytes!(concat!(
+        env!("OUT_DIR"),
+        "/wasm32-unknown-unknown/debug/ee.wasm"
+    ));  // TODO: remove hardcoded path to debug
+    ret.to_vec()
 }
 
 pub fn transfer(to: Vec<u8>, from: Vec<u8>, amount: u64, nonce: u64) -> Vec<u8> {
