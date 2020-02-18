@@ -1,7 +1,12 @@
 [package]
 name = "wrapper"
 version = "0.1.0"
-authors = ["{{authors}}"]
 edition = "2018"
 
 [dependencies]
+arrayref = "0.3.5"
+interface = { path = "../interface", features = ["generate"] }
+proof = { git = "https://github.com/lightclient/proof.git", branch="master", features = ["generate"]}
+
+[dev-dependencies]
+oof = "0.1.1"

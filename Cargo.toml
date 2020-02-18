@@ -3,6 +3,17 @@ name = "{{project-name}}"
 version = "0.1.0"
 authors = ["{{authors}}"]
 edition = "2018"
+
+
 [dependencies]
 wrapper = { path = "wrapper" }
-ease = { git = "https://github.com/quilt/ease", branch = "master" }
+ee = { path = "ee", package = "ee" }
+interface = { path = "interface" }
+ease = { git = "https://github.com/quilt/ease.git", branch="master" }
+oof = "0.1.1"
+proof = { git = "https://github.com/lightclient/proof.git", branch="master" }
+ewasm = "0.2.3"
+bonsai = { version = "0.2.1", default-features = false, features = ["u128"] }
+arrayref = "0.3.5"
+hex = "0.3.2"
+
