@@ -1,13 +1,12 @@
 use arrayref::array_ref;
+use ee::entry;
 use interface::{Account, Address, PublicKey};
 use proof::number::U2;
-use ee::entry;
 use wrapper::{build_state, transfer};
 
 /// This is the logic needed to interact with a basic transfer EE    
-/// TODO:  Replace with logic needed to interact with your custom EE 
+/// TODO:  Replace with logic needed to interact with your custom EE
 pub fn main() {
-   
     let mut one_pk = vec![0; 49];
     let mut two_pk = vec![0; 49];
     one_pk.extend(&((std::u128::MAX >> 1) - 2).to_le_bytes());
