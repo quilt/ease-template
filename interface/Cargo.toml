@@ -11,10 +11,10 @@ bonsai = { git = "https://github.com/lightclient/bonsai.git", branch="master", d
 oof = "0.1.1"
 
 [target.'cfg(feature = "generate")'.dependencies]
-proof = { path = "../../proof", features = ["generate"] }
+proof = { git = "https://github.com/lightclient/proof.git", branch="master", features = ["generate"]}
 
 [target.'cfg(not(feature = "generate"))'.dependencies]
-proof = { path = "../../proof" }
+proof = { git = "https://github.com/lightclient/proof.git", branch="master"}
 
 [features]
 default = []

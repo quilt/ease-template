@@ -38,7 +38,7 @@ pub extern "C" fn main() {
     unsafe { native::eth2_savePostStateRoot(post_root.as_ptr() as *const u32) }
 }
 
- /// TODO:  Replace with custom logic for your EE
+/// TODO:  Replace with custom logic for your EE
 pub fn entry(blob: &mut [u8], pre: &[u8; 32]) -> [u8; 32] {
     let mut blob = RawBlob::new(blob);
     let mut db = RefList::<RefAccount, U2>::from_raw(blob.raw_proof());

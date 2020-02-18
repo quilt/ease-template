@@ -11,7 +11,7 @@ ee = { path = "ee", package = "ee" }
 interface = { path = "interface" }
 ease = { git = "https://github.com/quilt/ease.git", branch="master" }
 oof = "0.1.1"
-proof = { path = "../proof" }
+proof = { git = "https://github.com/lightclient/proof.git", branch="master" }
 ewasm = "0.2.3"
 bonsai = { version = "0.2.1", default-features = false, features = ["u128"] }
 arrayref = "0.3.5"

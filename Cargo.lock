@@ -479,6 +479,7 @@ dependencies = [
 [[package]]
 name = "proof"
 version = "0.0.0"
+source = "git+https://github.com/lightclient/proof.git#7903ea27df136093038708ca24199c7b4c530982"
 dependencies = [
  "arborist",
  "bonsai 0.2.1 (git+https://github.com/lightclient/bonsai.git)",
