@@ -1,7 +1,7 @@
 use crate::Transaction;
 use arrayref::array_ref;
 use core::{
-    mem::{size_of, take, transmute},
+    mem::{size_of, take},
     slice,
 };
 
@@ -14,7 +14,7 @@ impl<'a> RawBlob<'a> {
 
     pub fn transactions(&self) -> &[Transaction] {
         let ptr = self.0.as_ptr();
-        unsafe { slice::from_raw_parts(transmute(ptr.offset(4)), self.tx_count() as usize) }
+        unsafe { slice::from_raw_parts(ptr.offset(4) as *const Transaction, self.tx_count() as usize) }
     }
 
     pub fn tx_count(&self) -> u32 {
